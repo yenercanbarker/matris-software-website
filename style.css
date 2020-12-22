@@ -1,0 +1,559 @@
+@font-face {
+  font-family: 'lemonmilkregular';
+  src: url('lemonmilk-webfont.woff2') format('woff2'),
+    url('lemonmilk-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Quantify Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/Quantify.ttf');
+}
+
+@font-face {
+  font-family: 'Quantify Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/Quantify-Bold.ttf');
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  overflow-x: hidden
+}
+
+#logo {
+  padding-left: 50px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.navbar ul {
+  margin-right: 50px;
+  margin-top: 25px;
+  font-size: 24px;
+}
+
+.navbar li a {
+  color: white !important;
+  margin-right: 10px;
+  font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+}
+
+.navbar li.active {
+  font-weight: bold;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  z-index: 6 !important;
+  position: absolute;
+  top: 25px;
+  right: 27px;
+  font-size: 60px;
+}
+
+.navbar-toggler span {
+  top: 25px;
+  right: 27px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 5px;
+    right: 15px;
+  }
+}
+
+.scrolled {
+  background-color: black;
+  z-index: 5 !important;
+  transition: 0.3s;
+  height: 100px;
+  top: -15px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #f6b501;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 60px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#myBtn:hover {
+  background-color: black;
+  /* Add a dark-grey background on hover */
+  color: #f6b501;
+}
+
+.baslik {
+  font-family: 'Quantify Regular';
+}
+
+.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("images/homepage.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+
+.masthead hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.masthead h1 {
+  font-size: 2rem;
+}
+
+.masthead p {
+  font-weight: 500;
+}
+
+.masthead .button {
+  /* 6c63ff */
+  background-color: #FEC323;
+  border-radius: 30px;
+  color: black;
+  border: 1px solid none;
+  margin-top: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.masthead .button:hover {
+  /* 6c63ff */
+
+  background-color: black;
+  color: #FEC323;
+  ;
+}
+
+.whoami {
+  font-size: 36px;
+  font-weight: bold;
+  font-style: italic;
+
+}
+
+.aboutme {
+  font-size: 20px;
+
+}
+
+.logos a {
+  color: white;
+  text-decoration: none;
+}
+
+.logos i {
+  padding: 0 10px 10px 0;
+}
+
+.mail {
+  font-size: 20px;
+}
+
+.jumbo1 {
+  background-image: url("images/jumbo1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.jumbo2 {
+  background-image: url("images/jumbo2.jpg");
+  background-position: center center;
+  background-size: cover;
+
+}
+
+.jumbo3 {
+  background-image: url("images/jumbo3.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.jumbo4 {
+  background-image: url("images/jumbo4.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.jumbo5 {
+  background-image: url("images/jumbo5.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.jumbo6 {
+  background-image: url("images/jumbo6.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.jumbo7 {
+  background-image: url("images/jumbo7.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.packagesfull {
+  background-color: #04619f;
+}
+
+
+.packages {
+  padding-top: 5rem;
+  padding-bottom: calc(5rem - 56px);
+}
+
+.packages .header {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.packages #bestprice {
+  width: 100.7%;
+  padding-top: 6.25px;
+  padding-bottom: 6.25px;
+  padding-right: 6.25px;
+  padding-left: 6.25px;
+  margin-top: 15px;
+  position: absolute;
+  display: block;
+  background-color: #FEC323;
+  border-radius: 0 10px 0 0;
+  color: black;
+  font-size: 22px;
+  font-weight: 500;
+  left: -1px;
+  -ms-transform: skewY(-5deg);
+  /* IE 9 */
+  -webkit-transform: skewY(-5deg);
+  /* Safari 3-8 */
+  transform: skewY(-5deg);
+}
+
+.packages #bestseller {
+  width: 100.7%;
+  padding-top: 6.25px;
+  padding-bottom: 6.25px;
+  padding-right: 6.25px;
+  padding-left: 6.25px;
+  margin-top: 15px;
+  border-radius: 0 10px 0 0;
+  font-size: 22px;
+  font-weight: 500;
+  left: -1px;
+  position: absolute;
+  display: block;
+  background-color: green;
+  color: white;
+  -ms-transform: skewY(-5deg);
+  /* IE 9 */
+  -webkit-transform: skewY(-5deg);
+  /* Safari 3-8 */
+  transform: skewY(-5deg);
+}
+
+.packages #professional {
+  width: 100.7%;
+  padding-top: 6.25px;
+  padding-bottom: 6.25px;
+  padding-right: 6.25px;
+  padding-left: 6.25px;
+  margin-top: 15px;
+  border-radius: 0 10px 0 0;
+  margin-right: 0px;
+  left: -1px;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  display: block;
+  background-color: blue;
+  color: white;
+  -ms-transform: skewY(-5deg);
+  /* IE 9 */
+  -webkit-transform: skewY(-5deg);
+  /* Safari 3-8 */
+  transform: skewY(-5deg);
+}
+
+.packages .packagename {
+  font-family: 'Quantify Regular';
+  padding-top: 85px;
+  padding-bottom: 10px;
+}
+
+.packages ul {
+  list-style: none;
+
+}
+
+.packages ul li {
+  padding-bottom: 2px;
+  display: block;
+}
+
+
+.packages ul li::before {
+  content: "\2022";
+  color: #FEC323;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.packages .prices {
+  font-size: 36px;
+  padding-top: 10px;
+  padding-bottom: 1px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.packages .button {
+  /* 6c63ff */
+  background-color: white;
+  color: #6c63ff;
+  border: 1px solid none;
+  border-radius: 0 120px 0 120px;
+  margin-top: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.packages .button:hover {
+  /* 6c63ff */
+
+  background-color: #6c63ff;
+  color: white;
+}
+
+.packages .footer {
+  border: 1px solid none;
+  border-radius: 15px 15px 15px 15px;
+  padding-bottom: 50px;
+}
+
+.first {
+  background: #23074d;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #cc5333, #23074d);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #cc5333, #23074d);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-bottom: 12px;
+}
+
+.second {
+  background: #23074d;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #cc5333, #23074d);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #cc5333, #23074d);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-bottom: 12px;
+}
+
+.third {
+  background: #23074d;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #cc5333, #23074d);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #cc5333, #23074d);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-bottom: 12px;
+}
+
+.jumbotron {
+  background-color: black !important;
+  border: 1px;
+  border-radius: 20px;
+}
+
+.jumbotron h1 {
+  font-weight: 400;
+}
+
+.aboutus {
+  padding-top: 5rem;
+  padding-bottom: calc(7rem - 56px);
+  background-color: #04619f;
+}
+
+.aboutus .header {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.contact {
+  padding-top: 5rem;
+  padding-bottom: calc(7rem - 56px);
+  background-color: #04619f;
+}
+
+
+
+.whoami {
+  font-size: 36px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.aboutcompany {
+  font-size: 20px;
+}
+
+.parallax {
+  padding: 100px;
+}
+
+.quote1 {
+  z-index: 2;
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+
+.pagefooter {
+  color: white;
+  background-color: black;
+}
+
+@media (min-width: 768px) {
+  .masthead p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .masthead h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .packages .packagename {
+    font-size: 50px;
+  }
+
+  .aboutme {
+    margin-left: 0px !important;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  .packages .packagename {
+    font-size: 30px;
+  }
+
+
+}
+
+@media (min-width: 992px) {
+
+  .packages .packagename {
+    font-size: 35px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .packages .packagename {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1201px) {}
